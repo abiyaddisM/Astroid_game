@@ -104,8 +104,8 @@
         requestAnimationFrame(fall);
     }
 
-    var interval = 200;
-   let createDivInter= setInterval(createDiv, interval);
+    var createInterval = 400;
+   let createDivInter= setInterval(createDiv, createInterval);
 
 //
 //
@@ -140,6 +140,7 @@
             if(second<40){
                 fallSpeed+=2;
                 playerSpeed+=1;
+                createInterval-=150;
             }
 
 
